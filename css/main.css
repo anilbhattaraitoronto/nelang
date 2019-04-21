@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+.banner .masthead{
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    font-size: calc(3vw + 20px);
+    padding: 40px 0;
+}
+.main-section{
+   
+    width: 90vw;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    border-radius: 8px;
+    border: 1px solid lightgray;
+}
+#landing{
+    height: 90vh;
+    padding-top: 42vh;
+    text-align: center;
+}
+#start-button{
+    cursor: pointer;
+    width: 100%;
+    max-width: 200px;
+    /* border-radius: 8px; */
+    background:black;
+    opacity: .6;
+    border: none;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    color: white;
+    padding: 5px 0;
+    margin: auto;
+    text-align: center;
+    box-shadow: -1px -2px 1px 2px lightgray;
+    animation: animateStartButton 2000ms ease-in-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+@keyframes animateStartButton {
+    from {transform: scale(1); opacity: .8}
+    to {transform: scale(1.1); opacity: 1}
+}
+#start-button:hover{
+    opacity: 1;
+    transform: scale(1.2);
+}
+.main-nav{
+    background: white;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid lightgray;
+}
+.main-nav > .link{
+    cursor: pointer;
+    padding: 8px 12px;
+    text-transform: uppercase;
+    font-size: .8em;
+    font-weight: bold;
+    transition: background 150ms ease-in-out;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    box-shadow: 1px 0px 2px gray;
+    transition: box-shadow 150ms ease-in-out;
+}
+
+.active-lesson-level{
+    background: gray;
+   
+}
+.section-title{
+    padding-top: 40px;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    font-size: 1.3em;
+}
+
+.item-box{
+    position: relative;
+    height: 300px;
+    width: 370px;
+    margin: 1px auto;
+    background: rgb(216, 210, 210);
+}
+.lesson-title{
+    background: black;
+    color: white;
+    padding: 5px 0;
+    margin: 5px 0;
+    width: 100%;
+    max-width: 370px;
+    margin: auto;
+}
+.beginner-lesson-nav{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    width: 100%;
+    background: lightgray;
+}
+.beginner-lesson-nav .beginner-lesson-link{
+    cursor: pointer;
+    padding: 5px 8px;
+    font-size: .9em;
+}
+.beginner-lessons{
+    position: relative;
+    width: 100%;
+    max-width: 370px;
+    margin: auto;
+}
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 46%;
+    color: rgb(27, 21, 21);
+    display: inline;
+    font-weight: bold;
+}
+.prev{
+    left: 3px;
+}
+.next{
+    position: absolute;
+    right: 3px;
+}
+.prev:hover, .next:hover{
+    background: white;
+}
+
+
+.nepali{
+    text-align: center;
+    font-size: 4em;
+    padding-top: 100px;
+    font-weight: bolder;
+    text-shadow: 1px 1px 1px white;
+}
+.english{
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    font-size: 24px;
+}
+.audio{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}

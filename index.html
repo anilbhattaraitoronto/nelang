@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="A webapp for learning Nepali language, the first language of over 30 million people who live in Nepal and outside" />
+    <meta name="keywords" content="nepali, nepali language, learn language, south asia language, nepal, nepali mother tongue" />
+    <link rel="stylesheet" href="css/main.css">
+    <title>Learn Nepali</title>
+</head>
+<body>
+    <main class="wrapper">
+        <section class="banner">
+            <h1 class="masthead">Learn Nepali</h1>
+        </section>
+        <section class="main-section" id="landing">
+            <button id = "start-button">Start Learning</button>
+        </section>
+
+        <section class="main-section">
+           <nav class="main-nav">
+               <span class="link" onclick="currentSection('.lesson', '.link', 0)">Beginner</span>
+               <span class="link" onclick="currentSection('.lesson', '.link', 1)">Intermediate</span>
+               <span class="link" onclick="currentSection('.lesson', '.link', 2)">Advanced</span>
+           </nav>
+           <section class="lesson">
+               <h2 class="section-title">Beginner</h2>
+               <nav class="beginner-lesson-nav">
+                    <span class="beginner-lesson-link" onclick="currentLesson('.beginner-lesson', '.beginner-lesson-link', 0)">Vowels</span>
+                    <span class="beginner-lesson-link" onclick="currentLesson('.beginner-lesson', '.beginner-lesson-link', 1)">Roots</span>
+                    <span class="beginner-lesson-link" onclick="currentLesson('.beginner-lesson', '.beginner-lesson-link', 2)">Extended Roots</span>
+                    <span class="beginner-lesson-link" onclick="currentLesson('.beginner-lesson', '.beginner-lesson-link', 3)">Words</span>
+                    <span class="beginner-lesson-link" onclick="currentLesson('.beginner-lesson', '.beginner-lesson-link', 4)">Sentences</span>
+                </nav>
+               <div class="beginner-lessons">
+                    <section class="beginner-lesson">
+                        <h3 class="lesson-title">Vowels</h3>
+                        <section class="item-box">
+                            <div class="nepali"></div>
+                            <div class="english"></div>
+                            <div class="audio"></div>
+                            <span class="prev">Prev</span>
+                            <span class="next">Next</span>
+                        </section>
+                        <div class="description">
+                            <p>Vowels are the main building blocks of Nepali language</p>
+                        </div>
+                    </section>
+                    <section class="beginner-lesson">
+                        <h3 class="lesson-title">Roots</h3>
+                        <section class="item-box">
+                            <div class="nepali"></div>
+                            <div class="english"></div>
+                            <div class="audio"></div>
+                        </section>
+                    </section>
+                    <section class="beginner-lesson">
+                        <h3 class="lesson-title">Extended Roots</h3>
+                        <section class="item-box">
+                            <div class="nepali"></div>
+                            <div class="english"></div>
+                            <div class="audio"></div>
+                        </section>
+                    </section>
+                    <section class="beginner-lesson">
+                        <h3 class="lesson-title">Words</h3>
+                        <section class="item-box">
+                            <div class="nepali"></div>
+                            <div class="english"></div>
+                            <div class="audio"></div>
+                        </section>
+                    </section>
+                    <section class="beginner-lesson">
+                        <h3 class="lesson-title">Sentences</h3>
+                        <section class="item-box">
+                            <div class="nepali"></div>
+                            <div class="english"></div>
+                            <div class="audio"></div>
+                        </section>
+                    </section>
+                 
+               </div>
+            </section>
+           <section class="lesson">
+               <h2 class="section-title">Intermediate</h2></section>
+           <section class="lesson">
+               <h2 class="section-title">Advanced</h2>
+            </section>
+        </section>
+    </main>
+    
+    <script src="js/main.js" ></script>
+</body>
+</html>
