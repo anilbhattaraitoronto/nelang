@@ -96,7 +96,7 @@
 .item-box{
     position: relative;
     height: 300px;
-    width: 370px;
+    width: 330px;
     margin: 1px auto;
     background: rgb(216, 210, 210);
 }
@@ -106,7 +106,7 @@
     padding: 5px 0;
     margin: 5px 0;
     width: 100%;
-    max-width: 370px;
+    max-width: 330px;
     margin: auto;
 }
 .beginner-lesson-nav{
@@ -120,7 +120,7 @@
 .beginner-lessons{
     width: 100%;
     margin: auto;
-    max-width: 370px;
+    max-width: 330px;
 }
 .beginner-lesson-nav .beginner-lesson-link{
     cursor: pointer;
