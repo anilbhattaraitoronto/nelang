@@ -25,9 +25,10 @@
     border: 1px solid lightgray;
 }
 #landing{
-    height: 90vh;
-    padding-top: 42vh;
+    height: 60vh;
+    padding-top: 24vh;
     text-align: center;
+    box-shadow: 2px 2px 8px 4px gray;
 }
 #start-button{
     cursor: pointer;
@@ -117,7 +118,7 @@
     padding: 5px 8px;
     font-size: .9em;
 }
-.beginner-lessons{
+.beginner-lesson{
     position: relative;
     width: 100%;
     max-width: 370px;

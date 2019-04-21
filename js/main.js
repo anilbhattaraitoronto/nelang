@@ -1,7 +1,5 @@
-
-
+//Function to take From Landing Page to Lesson Area
 let mainIndex = 0;
-//Take From Landing Page to Lesson Area
 let startButton = document.querySelector('#start-button');
 let masthead = document.querySelector('.masthead');
 
@@ -11,19 +9,23 @@ const openLessonSection = (sectionClass) => {
         section.style.display = 'none';
     })
     mainSections[mainIndex].style.display = 'block'
-}
+};
+//Show Initial Landing Page
 openLessonSection('.main-section');
+
+//Go to Lesson Section
 startButton.addEventListener('click', () => {
     mainIndex++;
     openLessonSection('.main-section');
-})
+});
 
+//Come back to Landing Page
 masthead.addEventListener('click', () => {
     mainIndex = 0;
     openLessonSection('.main-section')
 });
 
-//Selection Lesson Level
+//Select Lesson Level
 // let sectionIndex = 0;
 const selectSection = (sectionClass, linkClass, index = 0) => {
     let sections = document.querySelectorAll(sectionClass)
@@ -36,20 +38,23 @@ const selectSection = (sectionClass, linkClass, index = 0) => {
     })
     sections[index].style.display = 'block';
     links[index].className += ' active-lesson-level'
-}
+};
 
+//Display First Level
 selectSection('.lesson', '.link');
 
 // // let lessonIndex = 0;
+//Display first Beginner Lesson = Vowel
 selectSection('.beginner-lesson', '.beginner-lesson-link');
 
+//Functions for Navigating through different levels
 const currentSection = (sectionClass, linkClass, sectionIndex = 0) => {
     selectSection(sectionClass, linkClass, sectionIndex);
-}
-
+};
+//Function to navigate through different lessons
 const currentLesson = (lessonClass, linkClass, lessonIndex = 0) => {
     selectSection(lessonClass, linkClass, lessonIndex)
-}
+};
 
 //Insert Vowels into the DOM
 const vowels = [
@@ -133,24 +138,24 @@ const insertVowel = () => {
     nepali.textContent = vowels[vowelIndex - 1].nepali;
     english.textContent = vowels[vowelIndex - 1].english;
     sound.textContent = vowels[vowelIndex - 1].sound;
-}
+};
 
 insertVowel(vowelIndex);
 const prevVowel = () => {
 
     vowelIndex--;
     insertVowel();
-}
+};
 const nextVowel = () => {
     vowelIndex++;
     insertVowel()
-}
+};
 
 const prevVowelButton = document.querySelector('.prev');
 const nextVowelButton = document.querySelector('.next');
 
-prevVowelButton.addEventListener('click', prevVowel)
-nextVowelButton.addEventListener('click', nextVowel)
+prevVowelButton.addEventListener('click', prevVowel);
+nextVowelButton.addEventListener('click', nextVowel);
 
 
 
