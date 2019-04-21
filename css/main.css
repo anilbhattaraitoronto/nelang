@@ -11,6 +11,9 @@
     letter-spacing: 8px;
     font-size: calc(3vw + 20px);
     padding: 40px 0;
+    background: black;
+    color: white;
+    margin: 20px auto;
 }
 .main-section{
    
@@ -131,6 +134,7 @@
     color: rgb(27, 21, 21);
     display: inline;
     font-weight: bold;
+    background: white;
 }
 .prev{
     left: 3px;
@@ -140,7 +144,8 @@
     right: 3px;
 }
 .prev:hover, .next:hover{
-    background: white;
+    background: black;
+    color: white;
 }
 
 
