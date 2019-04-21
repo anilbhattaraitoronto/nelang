@@ -1,5 +1,7 @@
 //Function to take From Landing Page to Lesson Area
 let mainIndex = 0;
+var vowelIndex = 1;
+
 let startButton = document.querySelector('#start-button');
 let masthead = document.querySelector('.masthead');
 
@@ -10,7 +12,8 @@ const openLessonSection = (sectionClass) => {
     })
     mainSections[mainIndex].style.display = 'block'
 };
-//Show Initial Landing Page
+
+//Show Landing Page When the site loads
 openLessonSection('.main-section');
 
 //Go to Lesson Section
@@ -19,10 +22,12 @@ startButton.addEventListener('click', () => {
     openLessonSection('.main-section');
 });
 
-//Come back to Landing Page
+//Go back to Landing Page
 masthead.addEventListener('click', () => {
     mainIndex = 0;
     openLessonSection('.main-section')
+
+    vowelIndex = 1;
 });
 
 //Select Lesson Level
@@ -121,7 +126,7 @@ const vowels = [
     }
 ]
 
-let vowelIndex = 1;
+
 const insertVowel = () => {
     let length = vowels.length;
     if (vowelIndex > length) {
@@ -139,8 +144,9 @@ const insertVowel = () => {
     english.textContent = vowels[vowelIndex - 1].english;
     sound.textContent = vowels[vowelIndex - 1].sound;
 };
-
+//Show First Vowel when opening
 insertVowel(vowelIndex);
+
 const prevVowel = () => {
 
     vowelIndex--;
