@@ -15,7 +15,7 @@
     letter-spacing: 8px;
     font-size: calc(2vw + 16px);
     padding: 40px 0;
-    color: var(--theme-blue);
+    color: var(--theme-red);
     margin: auto;
     border-bottom: 1px solid var(--theme-red);
 }
@@ -103,17 +103,17 @@
 .item-box{
     position: relative;
     height: 300px;
-    width: 330px;
+    width: 430px;
     margin: 1px auto;
     background: var(--theme-blue);
 }
 .lesson-title{
-    background: var(--theme-white);
-    color: var(--theme-blue);
+    background: var(--theme-red);
+    color: var(--theme-white);
     padding: 5px 0;
     margin: 5px 0;
     width: 100%;
-    max-width: 330px;
+    max-width: 430px;
     margin: auto;
 }
 .beginner-lesson-nav{
@@ -127,18 +127,20 @@
 .beginner-lessons{
     width: 100%;
     margin: auto;
-    max-width: 330px;
+    max-width: 430px;
 }
  .beginner-lesson-link{
     cursor: pointer;
     padding: 5px 8px;
     font-size: .9em;
     color: var(--theme-blue);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
 .beginner-lesson{
     position: relative;
     width: 100%;
-    max-width: 370px;
+    max-width: 430px;
     margin: auto;
 }
 .prev, .next{
@@ -180,6 +182,14 @@
 }
 .audio{
     position: absolute;
+    color: var(--theme-white);
     bottom: 0;
     right: 0;
+}
+
+footer{
+    padding: 10px 0;
+    margin-top: 40px;
+    background: var(--theme-blue);
+    color: white;
 }
