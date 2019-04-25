@@ -17,6 +17,7 @@
     padding: 40px 0;
     color: var(--theme-blue);
     margin: auto;
+    border-bottom: 1px solid var(--theme-red);
 }
 .main-section{
    
@@ -32,34 +33,41 @@
     border: 1px solid lightgray;
 }
 #landing{
-    height: 60vh;
-    padding-top: 14vh;
+    position: relative;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
     text-align: center;
-    background: var(--theme-blue);
+    background: var(--theme-red);
+    box-shadow: 0 0 6px 12px var(--theme-blue);
+    margin-top: 60px;
 }
 #start-button{
-    cursor: pointer;
-    width: 100%;
-    max-width: 200px;
-    height: 200px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
     border-radius: 50%;
+    margin: auto;
+    cursor: pointer;
+    width: 200px;
+    height: 200px;
+    /* border-radius: 50%; */
     /* background:var(--theme-white); */
     opacity: .6;
     border: none;
     font-size: 1.2em;
     text-transform: uppercase;
-    color: var(--theme-blue);
-    padding: 5px 0;
+    color: var(--theme-red);
+    font-weight: bold;
     margin: auto;
     text-align: center;
-    box-shadow: -1px -2px 1px 2px lightgray;
-    animation: animateStartButton 2000ms ease-in-out;
+    animation: animateStartButton 2500ms ease-in-out;
     animation-direction: alternate;
     animation-iteration-count: infinite;
 }
 @keyframes animateStartButton {
-    from {transform: scale(1); opacity: .8}
-    to {transform: scale(1.1); opacity: 1}
+    from {transform: scale(1); opacity: .9}
+    to {transform: scale(1.4); opacity: 1}
 }
 #start-button:hover{
     opacity: 1;
