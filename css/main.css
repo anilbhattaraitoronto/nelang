@@ -61,9 +61,6 @@
     animation: animateStartButton 2500ms ease-in-out;
     animation-direction: alternate;
     animation-iteration-count: infinite;
-    -webkit-animation: animateStartButton 2500ms ease-in-out;
-    -webkit-animation-direction: alternate;
-    -webkit-animation-iteration-count: infinite;
 }
 @keyframes animateStartButton {
     from {transform: scale(1); -webkit-transform:scale(1); opacity: .9}
