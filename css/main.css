@@ -20,7 +20,6 @@
     border-bottom: 1px solid var(--theme-red);
 }
 .main-section{
-   
     width: 100vw;
     max-width: 800px;
     margin: auto;
@@ -39,7 +38,7 @@
     border-radius: 50%;
     text-align: center;
     background: var(--theme-red);
-    box-shadow: 0 0 6px 12px var(--theme-blue);
+    box-shadow: 0 0 8px 3px var(--theme-black);
     margin-top: 60px;
 }
 #start-button{
@@ -51,27 +50,24 @@
     cursor: pointer;
     width: 200px;
     height: 200px;
-    /* border-radius: 50%; */
-    /* background:var(--theme-white); */
     opacity: .6;
     border: none;
     font-size: 1.2em;
     text-transform: uppercase;
-    color: var(--theme-red);
+    color: var(--theme-blue);
     font-weight: bold;
     margin: auto;
     text-align: center;
     animation: animateStartButton 2500ms ease-in-out;
     animation-direction: alternate;
     animation-iteration-count: infinite;
+    -webkit-animation: animateStartButton 2500ms ease-in-out;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-iteration-count: infinite;
 }
 @keyframes animateStartButton {
-    from {transform: scale(1); opacity: .9}
-    to {transform: scale(1.4); opacity: 1}
-}
-#start-button:hover{
-    opacity: 1;
-    transform: scale(1.2);
+    from {transform: scale(1); -webkit-transform:scale(1); opacity: .9}
+    to {transform: scale(1.4);-webkit-transform:scale(1); opacity: 1.4}
 }
 .main-nav{
     width: 100%;
