@@ -3,17 +3,20 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial;
+    --theme-blue: #260099;
+    --theme-red:  #b30000;
+    --theme-white: #fae5e5;
+    --theme-black: #00061a;
 }
 .banner .masthead{
     cursor: pointer;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 8px;
-    font-size: calc(3vw + 20px);
+    font-size: calc(2vw + 16px);
     padding: 40px 0;
-    background: black;
-    color: white;
-    margin: 20px auto;
+    color: var(--theme-blue);
+    margin: auto;
 }
 .main-section{
    
@@ -25,26 +28,27 @@
     justify-content: center;
     align-content: center;
     text-align: center;
-    border-radius: 8px;
+    /* border-radius: 8px; */
     border: 1px solid lightgray;
 }
 #landing{
     height: 60vh;
-    padding-top: 24vh;
+    padding-top: 14vh;
     text-align: center;
-    box-shadow: 2px 2px 8px 4px gray;
+    background: var(--theme-blue);
 }
 #start-button{
     cursor: pointer;
     width: 100%;
     max-width: 200px;
-    /* border-radius: 8px; */
-    background:black;
+    height: 200px;
+    border-radius: 50%;
+    /* background:var(--theme-white); */
     opacity: .6;
     border: none;
     font-size: 1.2em;
     text-transform: uppercase;
-    color: white;
+    color: var(--theme-blue);
     padding: 5px 0;
     margin: auto;
     text-align: center;
@@ -62,12 +66,11 @@
     transform: scale(1.2);
 }
 .main-nav{
-    background: white;
     width: 100%;
     margin: auto;
     display: flex;
     justify-content: center;
-    border-bottom: 1px solid lightgray;
+    background: var(--theme-blue);
 }
 .main-nav > .link{
     cursor: pointer;
@@ -75,22 +78,25 @@
     text-transform: uppercase;
     font-size: .8em;
     font-weight: bold;
+    color: white;
     transition: background 150ms ease-in-out;
     border-top-right-radius: 8px;
     border-top-left-radius: 8px;
-    box-shadow: 1px 0px 2px gray;
+    box-shadow: 1px 0px 2px var(--theme-white);
     transition: box-shadow 150ms ease-in-out;
 }
 
-.active-lesson-level{
-    background: gray;
-   
+.active-lesson-level, .beginner-lesson-nav > .active-lesson-level{
+    background: var(--theme-red);
+    color: white;
 }
 .section-title{
     padding-top: 40px;
+    padding-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 6px;
     font-size: 1.3em;
+    color: var(--theme-red);
 }
 
 .item-box{
@@ -98,11 +104,11 @@
     height: 300px;
     width: 330px;
     margin: 1px auto;
-    background: rgb(216, 210, 210);
+    background: var(--theme-blue);
 }
 .lesson-title{
-    background: black;
-    color: white;
+    background: var(--theme-white);
+    color: var(--theme-blue);
     padding: 5px 0;
     margin: 5px 0;
     width: 100%;
@@ -115,17 +121,18 @@
     flex-wrap: wrap;
     margin-bottom: 20px;
     width: 100%;
-    background: lightgray;
+    border-bottom: 1px solid var(--theme-red);
 }
 .beginner-lessons{
     width: 100%;
     margin: auto;
     max-width: 330px;
 }
-.beginner-lesson-nav .beginner-lesson-link{
+ .beginner-lesson-link{
     cursor: pointer;
     padding: 5px 8px;
     font-size: .9em;
+    color: var(--theme-blue);
 }
 .beginner-lesson{
     position: relative;
@@ -141,13 +148,14 @@
     display: inline;
     font-weight: bold;
     background: white;
+    padding: 4px 8px;
 }
 .prev{
-    left: 3px;
+    left: 0;
 }
 .next{
     position: absolute;
-    right: 3px;
+    right: 0;
 }
 .prev:hover, .next:hover{
     background: black;
@@ -160,13 +168,14 @@
     font-size: 4em;
     padding-top: 100px;
     font-weight: bolder;
-    text-shadow: 1px 1px 1px white;
+    color:var(--theme-white);
 }
 .english{
     position: absolute;
     top: 3px;
     left: 3px;
     font-size: 24px;
+    color: var(--theme-white);
 }
 .audio{
     position: absolute;
