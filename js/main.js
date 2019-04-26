@@ -41,11 +41,10 @@ masthead.addEventListener('click', () => {
     mainIndex = 0;
     vowelIndex = 1;
     openLessonSection('.main-section')
+    selectSection('.lesson', '.link');
+    selectSection('.beginner-lesson', '.beginner-lesson-link');
     //Display First Level
-
     //Display first Beginner Lesson = Vowel
-
-
 });
 
 
