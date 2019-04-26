@@ -65,63 +65,63 @@ const currentLesson = (lessonClass, linkClass, lessonIndex = 0) => {
 const vowels = [
     {
         nepali: 'अ',
-        english: 'a',
+        english: '1.a',
         sound: 'a.mp3',
     },
     {
         nepali: 'आ',
-        english: 'aa',
+        english: '2.aa',
         sound: 'aa.mp3',
     },
     {
         nepali: 'इ',
-        english: 'i',
+        english: '3.i',
         sound: 'i.mp3',
     },
 
     {
         nepali: 'ई',
-        english: 'ee',
+        english: '4.ee',
         sound: 'ee.mp3',
     },
     {
         nepali: 'उ',
-        english: 'u',
+        english: '5.u',
         sound: 'u.mp3',
     },
     {
         nepali: 'ऊ',
-        english: 'oo',
+        english: '6.oo',
         sound: 'oo.mp3',
     },
     {
         nepali: 'ए',
-        english: 'eh',
+        english: '7.eh',
         sound: 'eh.mp3',
     },
     {
         nepali: 'ऐ',
-        english: 'ai',
+        english: '8.ai',
         sound: 'ai.mp3',
     },
     {
         nepali: 'ओ',
-        english: 'o',
+        english: '9.o',
         sound: 'o.mp3',
     },
     {
         nepali: 'औ',
-        english: 'au',
+        english: '10.au',
         sound: 'au.mp3',
     },
     {
         nepali: 'अं',
-        english: 'ahm',
+        english: '11.ahm',
         sound: 'ahm.mp3',
     },
     {
         nepali: 'अ:',
-        english: 'aha',
+        english: '12.aha',
         sound: 'aha.mp3',
     }
 ]
