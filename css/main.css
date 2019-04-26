@@ -229,7 +229,7 @@ footer{
     background: var(--theme-blue);
     color: white;
 }
-@media only screen and (max-width:450px){
+@media only screen and (max-width:500px){
     .banner .masthead{
         padding: 10px 0;
         font-size: 18px;
