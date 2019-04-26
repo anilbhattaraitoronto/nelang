@@ -1,6 +1,6 @@
 //Function to take From Landing Page to Lesson Area
 let mainIndex = 0;
-var vowelIndex = 1;
+let vowelIndex = 1;
 
 let startButton = document.querySelector('#start-button');
 let masthead = document.querySelector('.masthead');

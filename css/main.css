@@ -105,10 +105,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 300px;
+    height: 330px;
     width: 330px;
     margin: 1px auto;
     background: var(--theme-blue);
+    border-radius: 4px;
 }
 .lesson-title{
     background: var(--theme-red);
@@ -175,13 +176,14 @@
     align-items: center;
     font-size: 5em;
     font-weight: 500;
+    line-height: 0;
     color:var(--theme-red);
-    background:var(--theme-white);
+    background:white;
     height: 220px;
     width: 220px;
     border-radius: 50%;
     margin: auto;
-    box-shadow: 0 0 1px 2px var(--theme-red);
+    box-shadow: 0 0 0 1px var(--theme-red);
 }
 .english{
     position: absolute;
@@ -192,11 +194,10 @@
     top: 3px;
     left: 3px;
     font-size: 1.5em;
-    color: var(--theme-white);
     height: 60px;
     width: 60px;
-    background: var(--theme-white);
-    color: red;
+    background: white;
+    color:var(--theme-red);
 }
 .audio{
     position: absolute;
@@ -208,7 +209,7 @@
     border-radius: 50%;
     font-size: .8em;
     color: var(--theme-red);
-    background: var(--theme-white);
+    background: white;
     bottom: 3px;
     right: 3px;
 }
