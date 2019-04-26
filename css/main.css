@@ -8,6 +8,7 @@
     --theme-white: #fae5e5;
     --theme-black: #00061a;
 }
+
 .banner .masthead{
     cursor: pointer;
     text-align: center;
@@ -17,7 +18,14 @@
     padding: 40px 0;
     color: var(--theme-red);
     margin: auto;
-    border-bottom: 1px solid var(--theme-red);
+    
+}
+.banner #clock {
+    text-align: center;
+    color: var(--theme-white);
+    font-size: .9em;
+    padding: 5px 0;
+    background: var(--theme-blue);
 }
 .main-section{
     width: 100vw;
@@ -33,20 +41,22 @@
 }
 #landing{
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 300px;
     width: 300px;
     border-radius: 50%;
     text-align: center;
     background: var(--theme-red);
     box-shadow: 0 0 8px 3px var(--theme-black);
-    margin-top: 60px;
+    margin-top: 120px;
 }
 #start-button{
     position: absolute;
     top: 50px;
     left: 50px;
     border-radius: 50%;
-    margin: auto;
     cursor: pointer;
     width: 200px;
     height: 200px;
@@ -107,7 +117,7 @@
     align-items: center;
     height: 330px;
     width: 330px;
-    margin: 1px auto;
+    margin:  auto;
     background: var(--theme-blue);
     border-radius: 4px;
 }

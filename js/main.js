@@ -1,3 +1,14 @@
+//Show Time Dynamically below the Header
+function showTime() {
+    let dateNow = new Date().toLocaleString();
+
+    let clock = document.getElementById('clock')
+    clock.innerHTML = dateNow;
+}
+// setInterval(showTime, 1000);
+
+setInterval(showTime, 1000);
+
 //Function to take From Landing Page to Lesson Area
 let mainIndex = 0;
 let vowelIndex = 1;
@@ -16,19 +27,27 @@ const openLessonSection = (sectionClass) => {
 //Show Landing Page When the site loads
 openLessonSection('.main-section');
 
-//Go to Lesson Section
+//Go to Lesson Section 
 startButton.addEventListener('click', () => {
+    vowelIndex = 1;
     mainIndex++;
     openLessonSection('.main-section');
+    insertVowel();
 });
 
-//Go back to Landing Page
+
+//Go back to Landing Page and reset the existing levels and lessons to initial
 masthead.addEventListener('click', () => {
     mainIndex = 0;
-    openLessonSection('.main-section')
-
     vowelIndex = 1;
+    openLessonSection('.main-section')
+    //Display First Level
+
+    //Display first Beginner Lesson = Vowel
+
+
 });
+
 
 //Select Lesson Level
 // let sectionIndex = 0;
@@ -45,12 +64,11 @@ const selectSection = (sectionClass, linkClass, index = 0) => {
     links[index].className += ' active-lesson-level'
 };
 
-//Display First Level
 selectSection('.lesson', '.link');
+selectSection('.beginner-lesson', '.beginner-lesson-link');
 
 // // let lessonIndex = 0;
-//Display first Beginner Lesson = Vowel
-selectSection('.beginner-lesson', '.beginner-lesson-link');
+
 
 //Functions for Navigating through different levels
 const currentSection = (sectionClass, linkClass, sectionIndex = 0) => {
@@ -145,7 +163,7 @@ const insertVowel = () => {
     sound.textContent = vowels[vowelIndex - 1].sound;
 };
 //Show First Vowel when opening
-insertVowel(vowelIndex);
+
 
 const prevVowel = () => {
 
