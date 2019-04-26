@@ -232,10 +232,10 @@ footer{
 @media only screen and (max-width:450px){
     .banner .masthead{
         padding: 10px 0;
-        font-size: 20px;
+        font-size: 18px;
     }
     .banner #clock{
-        font-size: .8em;
+        font-size: .7em;
     }
     .section-title{
         padding: 20px 0;
